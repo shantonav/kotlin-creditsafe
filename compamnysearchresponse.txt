@@ -1,0 +1,302 @@
+{
+  "correlationId": "1ad2d110-0665-11ec-9f43-06722574d957",
+  "totalSize": 8013,
+  "companies": [
+    {
+      "id": "DE-0-DE01192871",
+      "country": "DE",
+      "regNo": "HRB 98513 B",
+      "vatNo": [
+        "DE"
+      ],
+      "safeNo": "DE01192871",
+      "name": "D.O.C. Projectmanagement GmbH",
+      "tradingNames": [
+        "D.O.C. Projectmanagement GmbH"
+      ],
+      "address": {
+        "simpleValue": "Chausseestr. 14, 10115, Berlin",
+        "street": "Chausseestr. 14",
+        "city": "Berlin",
+        "postCode": "10115"
+      },
+      "status": "NonActive",
+      "type": "Ltd",
+      "dateOfLatestAccounts": "2009-12-31T00:00:00.000000Z",
+      "dateOfLatestChange": "2018-12-14T22:48:27.000Z",
+      "phoneNumbers": [
+        "+493063499710"
+      ],
+      "matchScore": 10000,
+      "statusDescription": "Inactive",
+      "previousNames": [
+        "Soulution One-to-One GmbH",
+        "D.O.C. Projectmanagement GmbH"
+      ]
+    },
+    {
+      "id": "DE-0-DE00723049",
+      "country": "DE",
+      "regNo": "HRB 40508 B",
+      "vatNo": [
+        "DE"
+      ],
+      "safeNo": "DE00723049",
+      "name": "EWT Dr. Hilmer GmbH",
+      "tradingNames": [
+        "EWT Dr. Hilmer GmbH"
+      ],
+      "address": {
+        "simpleValue": "Linienstr. 136, 10115, Berlin",
+        "street": "Linienstr. 136",
+        "city": "Berlin",
+        "postCode": "10115"
+      },
+      "status": "NonActive",
+      "type": "Ltd",
+      "dateOfLatestChange": "2018-12-14T22:48:27.000Z",
+      "matchScore": 10000,
+      "statusDescription": "Inactive",
+      "previousNames": [
+        "EWT Dr. Hilmer GmbH"
+      ]
+    },
+    {
+      "id": "DE-0-DE20528956",
+      "country": "DE",
+      "regNo": "HRB 174915 B",
+      "vatNo": [
+        "DE"
+      ],
+      "safeNo": "DE20528956",
+      "name": "Samreen Food Concept GmbH",
+      "tradingNames": [
+        "Samreen Food Concept GmbH"
+      ],
+      "address": {
+        "simpleValue": "Ackerstraße 20, 10115, Berlin",
+        "street": "Ackerstraße 20",
+        "city": "Berlin",
+        "postCode": "10115"
+      },
+      "status": "active",
+      "type": "Ltd",
+      "dateOfLatestAccounts": "2019-12-31T00:00:00.000000Z",
+      "dateOfLatestChange": "2021-06-25T12:37:52.000Z",
+      "matchScore": 10000,
+      "statusDescription": "Active",
+      "previousNames": [
+        "Samreen Food Concept GmbH"
+      ]
+    },
+    {
+      "id": "DE-0-DE30197963",
+      "country": "DE",
+      "regNo": "HRB 203022 B",
+      "vatNo": [
+        "DE321901922"
+      ],
+      "safeNo": "DE30197963",
+      "name": "TP4 Group GmbH",
+      "tradingNames": [
+        "TP4 Group GmbH"
+      ],
+      "address": {
+        "simpleValue": "Linienstraße 130, 10115, Berlin",
+        "street": "Linienstraße 130",
+        "city": "Berlin",
+        "postCode": "10115"
+      },
+      "status": "active",
+      "type": "Ltd",
+      "dateOfLatestAccounts": "2019-12-31T00:00:00.000000Z",
+      "dateOfLatestChange": "2021-03-31T16:10:32.000Z",
+      "phoneNumbers": [
+        "+493020648637"
+      ],
+      "matchScore": 10000,
+      "statusDescription": "Active",
+      "previousNames": [
+        "TP4 Group GmbH"
+      ]
+    },
+    {
+      "id": "DE-0-DE15239390",
+      "country": "DE",
+      "regNo": "VR 28915 B",
+      "vatNo": [
+        "DE165089667"
+      ],
+      "safeNo": "DE15239390",
+      "name": "Hauptverband Papier- und Kunststoffverarbeitung (HPV) e.V.",
+      "tradingNames": [
+        "Hauptverband Papier- und Kunststoffverarbeitung (HPV) e.V."
+      ],
+      "address": {
+        "simpleValue": "Chausseestraße 22, 10115, Berlin",
+        "street": "Chausseestraße 22",
+        "city": "Berlin",
+        "postCode": "10115"
+      },
+      "status": "active",
+      "type": "Ltd",
+      "dateOfLatestChange": "2020-09-09T15:14:16.000Z",
+      "phoneNumbers": [
+        "+493024781830"
+      ],
+      "matchScore": 10000,
+      "statusDescription": "Active",
+      "previousNames": [
+        "Hauptverband Papier- und Kunststoffverarbeitung (HPV) e.V."
+      ]
+    },
+    {
+      "id": "DE-0-DE16990301",
+      "country": "DE",
+      "regNo": "VR 30408B",
+      "vatNo": [
+        "DE"
+      ],
+      "safeNo": "DE16990301",
+      "name": "NOVALISLAUBE e.V.",
+      "tradingNames": [
+        "NOVALISLAUBE e.V."
+      ],
+      "address": {
+        "simpleValue": "Novalisstr. 6, 10115, Berlin",
+        "street": "Novalisstr. 6",
+        "city": "Berlin",
+        "postCode": "10115"
+      },
+      "status": "NonActive",
+      "type": "Ltd",
+      "dateOfLatestChange": "2019-08-14T10:11:48.000Z",
+      "matchScore": 10000,
+      "statusDescription": "Inactive",
+      "previousNames": [
+        "NOVALISLAUBE e.V."
+      ]
+    },
+    {
+      "id": "DE-0-DE17564921",
+      "country": "DE",
+      "regNo": "HRB 158544 B",
+      "vatNo": [
+        "DE"
+      ],
+      "safeNo": "DE17564921",
+      "name": "Krümel Erste Beteiligung UG (haftungsbeschränkt)",
+      "tradingNames": [
+        "Krümel Erste Beteiligung UG (haftungsbeschränkt)"
+      ],
+      "address": {
+        "simpleValue": "Boyenstraße 39, 10115, Berlin",
+        "street": "Boyenstraße 39",
+        "city": "Berlin",
+        "postCode": "10115"
+      },
+      "status": "active",
+      "type": "Ltd",
+      "dateOfLatestAccounts": "2018-12-31T00:00:00.000000Z",
+      "dateOfLatestChange": "2019-11-12T13:45:50.000Z",
+      "matchScore": 10000,
+      "statusDescription": "Active",
+      "previousNames": [
+        "Krümel Erste Beteiligung UG (haftungsbeschränkt)"
+      ]
+    },
+    {
+      "id": "DE-0-DE02396368",
+      "country": "DE",
+      "regNo": "HRB 208180 B",
+      "vatNo": [
+        "DE"
+      ],
+      "safeNo": "DE02396368",
+      "name": "Karussell Film GmbH",
+      "tradingNames": [
+        "Karussell Film GmbH"
+      ],
+      "address": {
+        "simpleValue": "Platz vor dem Neuen Tor 2, 10115, Berlin",
+        "street": "Platz vor dem Neuen Tor 2",
+        "city": "Berlin",
+        "postCode": "10115"
+      },
+      "status": "active",
+      "type": "Ltd",
+      "dateOfLatestAccounts": "2019-12-31T00:00:00.000000Z",
+      "dateOfLatestChange": "2021-05-06T13:19:08.000Z",
+      "phoneNumbers": [
+        "+4930246260"
+      ],
+      "matchScore": 10000,
+      "statusDescription": "Active",
+      "previousNames": [
+        "HCG Management GmbH",
+        "Karussell Film GmbH"
+      ]
+    },
+    {
+      "id": "DE-0-DE02070328",
+      "country": "DE",
+      "regNo": "HRA 42245 B",
+      "vatNo": [
+        "DE"
+      ],
+      "safeNo": "DE02070328",
+      "name": "Malermeister Dieter Binger OHG",
+      "tradingNames": [
+        "Malermeister Dieter Binger OHG"
+      ],
+      "address": {
+        "simpleValue": "Schlegelstraße 2, 10115, Berlin",
+        "street": "Schlegelstraße 2",
+        "city": "Berlin",
+        "postCode": "10115"
+      },
+      "status": "active",
+      "type": "Ltd",
+      "dateOfLatestChange": "2020-02-07T13:26:23.000Z",
+      "phoneNumbers": [
+        "+493024532008"
+      ],
+      "matchScore": 10000,
+      "statusDescription": "Active",
+      "previousNames": [
+        "Malermeister Dieter Binger OHG"
+      ]
+    },
+    {
+      "id": "DE-0-DE17533340",
+      "country": "DE",
+      "regNo": "HRB 155896 B",
+      "vatNo": [
+        "DE"
+      ],
+      "safeNo": "DE17533340",
+      "name": "Bonagora GmbH",
+      "tradingNames": [
+        "Bonagora GmbH"
+      ],
+      "address": {
+        "simpleValue": "Zinnowitzer Straße 8, 10115, Berlin",
+        "street": "Zinnowitzer Straße 8",
+        "city": "Berlin",
+        "postCode": "10115"
+      },
+      "status": "active",
+      "type": "Ltd",
+      "dateOfLatestAccounts": "2015-12-31T00:00:00.000000Z",
+      "dateOfLatestChange": "2019-02-19T21:26:57.000Z",
+      "phoneNumbers": [
+        "+4930610820320"
+      ],
+      "matchScore": 10000,
+      "statusDescription": "Pending bankruptcy",
+      "previousNames": [
+        "Bonagora GmbH"
+      ]
+    }
+  ]
+}
