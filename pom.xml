@@ -26,6 +26,9 @@
         <openapitools.jacksonnullable.version>0.2.1</openapitools.jacksonnullable.version>
         <javax.annotation.version>1.3.2</javax.annotation.version>
         <io.gsonfire.version>1.8.5</io.gsonfire.version>
+        <skip.kotlin.compile>false</skip.kotlin.compile>
+        <skip.maven.compile>false</skip.maven.compile>
+        <skip.creditsafe.codegen>false</skip.creditsafe.codegen>
     </properties>
 
     <dependencies>
@@ -113,44 +116,28 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.22.0</version>
+                <configuration>
+                    <skipTests>${skip.maven.compile}</skipTests>
+                </configuration>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>${maven.compiler.version}</version>
                 <configuration>
+                    <skip>${skip.maven.compile}</skip>
+                    <skipMain>${skip.maven.compile}</skipMain>
                     <source>11</source>
                     <target>11</target>
                     <proc>none</proc>
                 </configuration>
             </plugin>
             <plugin>
-                <groupId>org.jetbrains.kotlin</groupId>
-                <artifactId>kotlin-maven-plugin</artifactId>
-                <version>${kotlin.version}</version>
-                <executions>
-                    <execution>
-                        <id>compile</id>
-                        <phase>compile</phase>
-                        <goals>
-                            <goal>compile</goal>
-                        </goals>
-                    </execution>
-                    <execution>
-                        <id>test-compile</id>
-                        <phase>test-compile</phase>
-                        <goals>
-                            <goal>test-compile</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-            <plugin>
                 <artifactId>kotlin-maven-plugin</artifactId>
                 <groupId>org.jetbrains.kotlin</groupId>
                 <configuration>
                     <jvmTarget>${kotlinJvmTarget}</jvmTarget>
-                    <javacOptions/>
+                    <skip>${skip.kotlin.compile}</skip>
                 </configuration>
                 <executions>
                     <execution>
@@ -162,6 +149,36 @@
                             <sourceDirs>
                                 <sourceDir>${project.build.directory}/generated-sources/src/main/kotlin</sourceDir>
                             </sourceDirs>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>test-compile</id>
+                        <phase>test-compile</phase>
+                        <goals>
+                            <goal>test-compile</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.openapitools</groupId>
+                <artifactId>openapi-generator-maven-plugin</artifactId>
+                <version>${openapi-generator-version}</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>generate</goal>
+                        </goals>
+                        <configuration>
+                            <skip>${skip.creditsafe.codegen}</skip>
+                            <skipValidateSpec>true</skipValidateSpec>
+                            <inputSpec>${project.basedir}/src/main/resources/creditsafe/CreditSafeOpenAPISpec.json</inputSpec>
+                            <generatorName>kotlin</generatorName>
+                            <output>${project.build.directory}/generated-sources</output>
+                            <apiPackage>${default.package.name}.handler</apiPackage>
+                            <modelPackage>${default.package.name}.model</modelPackage>
+                            <invokerPackage>${default.package.name}.handler</invokerPackage>
                         </configuration>
                     </execution>
                 </executions>
@@ -180,37 +197,14 @@
     </build>
 
     <profiles>
-        <profile>
-            <id>generate-creditsafe-openapi</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.openapitools</groupId>
-                        <artifactId>openapi-generator-maven-plugin</artifactId>
-                        <version>${openapi-generator-version}</version>
-                        <executions>
-                            <execution>
-                                <goals>
-                                    <goal>generate</goal>
-                                </goals>
-                                <configuration>
-                                    <skipValidateSpec>true</skipValidateSpec>
-                                    <inputSpec>${project.basedir}/src/main/resources/creditsafe/CreditSafeOpenAPISpec.json</inputSpec>
-                                    <generatorName>kotlin</generatorName>
-                                    <output>${project.build.directory}/generated-sources</output>
-                                    <apiPackage>${default.package.name}.handler</apiPackage>
-                                    <modelPackage>${default.package.name}.model</modelPackage>
-                                    <invokerPackage>${default.package.name}.handler</invokerPackage>
-                                </configuration>
-                            </execution>
-                        </executions>
-                    </plugin>
-                </plugins>
-            </build>
 
-        </profile>
         <profile>
             <id>cs-it-tests</id>
+            <properties>
+                <skip.maven.compile>true</skip.maven.compile>
+                <skip.kotlin.compile>true</skip.kotlin.compile>
+                <skip.creditsafe.codegen>true</skip.creditsafe.codegen>
+            </properties>
             <build>
                 <plugins>
                     <plugin>
